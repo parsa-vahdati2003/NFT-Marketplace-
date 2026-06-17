@@ -25,6 +25,8 @@ A modern and responsive NFT Marketplace frontend project built with Tailwind CSS
 
 You can view the live demo here:
 
+https://parsa-vahdati2003.github.io/NFT-Marketplace-/
+
 ## 🚀 Getting Started
 
 Clone the repository and open `index.html` in your browser:
