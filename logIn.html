@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>logIn page</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Work Sans -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Space Mono  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="js/jquery.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </head>
+
+  <body
+    class="font-w-sans selection:bg-primary min-h-dvh transition-all duration-300 ease-out selection:text-white"
+  >
+    <header
+      class="bg-background sticky top-0 left-0 z-99 flex w-full items-center justify-between gap-26 px-7 py-4 transition-all duration-300 md:px-12 md:py-5"
+    >
+      <div>
+        <img src="assets/icon/Logo.svg" alt="logo" />
+      </div>
+
+      <nav
+        id="navbar"
+        class="bg-background absolute top-full right-12 mt-4 flex flex-col items-center gap-2 rounded-xl p-4 shadow-lg xl:relative xl:flex xl:flex-row xl:shadow-none"
+      >
+        <a
+          class="hover:text-primary px-5 py-3 text-base font-semibold text-white transition-all duration-300 ease-out"
+          href="#Marketplace"
+          >Marketplace</a
+        >
+
+        <a
+          class="hover:text-primary px-5 py-3 text-base font-semibold text-white transition-all duration-300 ease-out"
+          href="#Rankings"
+          >Rankings</a
+        >
+
+        <a
+          class="hover:text-primary px-5 py-3 text-base font-semibold text-white transition-all duration-300 ease-out"
+          href="#Connect a wallet"
+          >Connect a wallet</a
+        >
+
+        <a
+          href="#"
+          class="font-w-sans bg-primary hover:bg-primary-opacity rounded-20 flex items-center gap-3 px-8 py-5 text-white transition-all duration-300 ease-out"
+        >
+          <img src="assets/icon/User-btn.svg" alt="user icon" />
+          <span>Sign Up</span>
+        </a>
+      </nav>
+      <button id="menu-btn" class="xl:hidden">
+        <img src="assets/icon/Burger-Menu.svg" alt="Burger Menu icon" />
+      </button>
+    </header>
+
+    <div
+      class="font-w-sans transition-all duration-300 ease-out"
+      id="container"
+    >
+      <div>
+        <section
+          id="hero"
+          class="bg-background mx-auto flex flex-col gap-0 md:flex-row md:gap-10 xl:gap-15"
+        >
+          <div class="w-full md:w-1/2">
+            <img
+              class="h-full w-full object-cover"
+              src="assets/img/logeInImg.png"
+              alt="main image"
+            />
+          </div>
+
+          <div class="flex w-1/2 flex-col px-5 py-24 md:px-7">
+            <h2
+              class="mb-5 w-82 text-4xl font-semibold text-white capitalize md:w-81 md:text-4xl xl:w-115 xl:text-5xl"
+            >
+              Create account
+            </h2>
+
+            <p
+              class="mb-10 w-79 leading-[140%] text-white capitalize md:w-81 md:text-base xl:w-116 xl:text-2xl xl:leading-[160%]"
+            >
+              Welcome! enter your details and start creating, collecting and
+              selling NFTs.
+            </p>
+
+            <form id="form" class="flex flex-col gap-4">
+              <fieldset class="relative flex flex-col">
+                <label for="user-name" aria-label="userName"> </label>
+
+                <input
+                  id="userName"
+                  class="border-color-border rounded-20 w-83 border border-solid bg-white py-3 pr-5 pl-12 placeholder-black"
+                  name="user-name"
+                  type="text"
+                  placeholder="Username"
+                  autocomplete="name"
+                />
+                <img
+                  class="absolute top-3.5 left-5"
+                  src="assets/icon/User-name.svg"
+                  alt="user name icon"
+                />
+                <span
+                  id="user-name-feedback"
+                  class="text-primary px-3 py-2 font-semibold"
+                >
+                </span>
+              </fieldset>
+
+              <fieldset class="relative flex flex-col">
+                <label for="email-address" aria-label="email-address"></label>
+                <input
+                  class="border-color-border rounded-20 relative w-83 border border-solid bg-white py-3 pr-5 pl-12 placeholder-black"
+                  id="email-address"
+                  name="email-address"
+                  type="email"
+                  placeholder="Email Address"
+                  autocomplete="email"
+                />
+                <img
+                  class="top absolute top-3.5 left-5"
+                  src="assets/icon/email.svg"
+                  alt="email name icon"
+                />
+                <span
+                  id="email-address-feedback"
+                  class="text-primary px-3 py-2 font-semibold"
+                ></span>
+              </fieldset>
+
+              <fieldset class="relative flex flex-col">
+                <label for="password" aria-label="password"></label>
+                <input
+                  class="border-color-border rounded-20 relative w-83 border border-solid bg-white py-3 pr-5 pl-12 placeholder-black"
+                  id="password"
+                  name="password-name"
+                  type="password"
+                  placeholder="Password"
+                  autocomplete="current-password"
+                  minlength="8"
+                />
+                <img
+                  class="top absolute top-3.5 left-5"
+                  src="assets/icon/pass.svg"
+                  alt="password name icon"
+                />
+                <span
+                  id="password-feedback"
+                  class="text-primary px-3 py-2 font-semibold"
+                ></span>
+              </fieldset>
+
+              <fieldset class="relative mb-8 flex flex-col">
+                <label
+                  for="confirm-password"
+                  aria-label="confirm-password"
+                ></label>
+                <input
+                  class="border-color-border rounded-20 relative w-83 border border-solid bg-white py-3 pr-5 pl-12 placeholder-black"
+                  id="confirm-password"
+                  name="confirm-password"
+                  type="password"
+                  placeholder="Confirm Password"
+                  autocomplete="current password"
+                  minlength="8"
+                />
+                <img
+                  class="top absolute top-3.5 left-5"
+                  src="assets/icon/passAgain.svg"
+                  alt="password name icon"
+                />
+                <span
+                  id="confirm-password-feedback"
+                  class="text-primary px-3 py-2 font-semibold"
+                ></span>
+              </fieldset>
+
+              <button
+                class="font-w-sans hover:bg-primary-opacity bg-primary rounded-20 w-83 px-26 py-3 text-base font-semibold text-white transition-all duration-300 ease-out"
+                type="submit"
+              >
+                Create account
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer id="footer" class="bg-background-secondry">
+      <div
+        class="grid items-center gap-8 px-8 py-10 md:grid-cols-1 md:px-18 md:py-19 xl:grid-cols-3 xl:px-48 xl:pt-10 xl:pb-8"
+      >
+        <div class="flex">
+          <div class="flex flex-col gap-5 xl:gap-8">
+            <div>
+              <img src="assets/icon/Logo.svg" alt="footer logo" />
+            </div>
+
+            <div>
+              <p
+                class="font-w-sans text-footer mb-5 w-79 text-base leading-[140%] font-medium md:w-max xl:w-60"
+              >
+                NFT marketplace UI created with Anima for Figma.
+              </p>
+              <span class="font-w-sans text-footer text-base font-medium"
+                >Join our community</span
+              >
+              <div id="social-media" class="mt-4 flex gap-2.5">
+                <a
+                  class="group hover:bg-primary-opacity rounded-lg transition-all duration-1000"
+                  href="https://www.discord.com/mossio_parsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="discord"
+                >
+                  <img
+                    class="transition-transform duration-1000 ease-in-out group-hover:scale-110 group-hover:rotate-360"
+                    src="assets/icon/DiscordLogo.svg"
+                    alt="Discord Logo"
+                  />
+                </a>
+                <a
+                  class="group hover:bg-primary-opacity rounded-lg transition-all duration-1000"
+                  href="https://www.youtube.com/mossio_parsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="youtube"
+                >
+                  <img
+                    class="transition-transform duration-1000 ease-in-out group-hover:scale-110 group-hover:rotate-360"
+                    src="assets/icon/YoutubeLogo.svg"
+                    alt="Youtube Logo"
+                  />
+                </a>
+                <a
+                  class="group hover:bg-primary-opacity rounded-lg transition-all duration-1000"
+                  href="https://www.x.com/mossio_parsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter(X)"
+                >
+                  <img
+                    class="transition-transform duration-1000 ease-in-out group-hover:scale-110 group-hover:rotate-360"
+                    src="assets/icon/TwitterLogo.svg"
+                    alt="TwitterLogo"
+                  />
+                </a>
+                <a
+                  class="group hover:bg-primary-opacity rounded-lg transition-all duration-1000"
+                  href="https://www.instagram.com/mossio_parsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <img
+                    class="transition-transform duration-1000 ease-in-out group-hover:scale-110 group-hover:rotate-360"
+                    src="assets/icon/InstagramLogo.svg"
+                    alt="Instagram Logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div>
+            <h5 class="font-mono text-2xl font-bold text-white capitalize">
+              explore
+            </h5>
+          </div>
+
+          <div class="flex flex-col gap-5">
+            <a
+              href="#Marketplace"
+              class="hover:text-primary text-footer text-base transition-all duration-300 ease-out"
+              >Marketplace</a
+            >
+            <a
+              href="#Rankings"
+              class="hover:text-primary text-footer text-base transition-all duration-300 ease-out"
+              >Rankings</a
+            >
+            <a
+              href="#Connect a wallet"
+              class="hover:text-primary text-footer text-base transition-all duration-300 ease-out"
+              >Connect a wallet</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <h5 class="mb-6 font-mono text-2xl font-bold text-white capitalize">
+            Join our weekly digest
+          </h5>
+
+          <p
+            class="text-footer mb-5 w-79 text-base leading-[140%] md:w-max xl:w-83"
+          >
+            Get exclusive promotions & updates straight to your inbox.
+          </p>
+
+          <div
+            class="rounded-20 flex flex-col gap-4 md:w-105 md:flex-row md:bg-white md:p-0"
+          >
+            <input
+              type="email"
+              id="email-footer"
+              placeholder="Enter Your Email Address"
+              required
+              class="rounded-20 w-full max-w-83 bg-white px-5 py-4 text-base placeholder-black focus:border-transparent focus:ring-0 focus:outline-none"
+            />
+
+            <button
+              type="submit"
+              class="bg-primary hover:bg-primary-opacity rounded-20 flex w-full justify-center gap-3 px-12 py-4 text-base font-bold text-white md:w-auto"
+            >
+              <img
+                class="block md:hidden"
+                src="assets/icon/sub-message.svg"
+                alt="subscribe message icon"
+              />
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-color-border mx-8 border-t md:mx-19 xl:mx-29">
+        <p class="text-footer py-5 text-xs">
+          &copy; NFT Market. Use this template freely.
+        </p>
+      </div>
+    </footer>
+    <button
+      id="topBtn"
+      class="fixed right-6 bottom-6 hidden rounded-full bg-blue-300 p-4 text-white shadow-lg transition-all duration-300 hover:bg-blue-200 focus:border-transparent focus:ring-0 focus:outline-none"
+    >
+      <div class="grid h-6 w-6 place-items-center">
+        <img src="assets/icon/arrow-up.svg" alt="arrow up icon" />
+      </div>
+    </button>
+  </body>
+</html>

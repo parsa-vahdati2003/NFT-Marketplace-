@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/work-sans/WorkSans-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/space-mono/SpaceMono-Regular.ttf") format("truetype");
+}
+
+@theme {
+  --color-background: #2b2b2b;
+  --color-background-secondry: #3b3b3b;
+  --color-background-secondry-opacity: rgba(59, 59, 59, 0.5);
+  --color-primary: #a259ff;
+  --color-primary-opacity: rgba(162, 89, 255, 0.5);
+  --color-color-border: #858584;
+  --color-footer: #cccccc;
+
+  --font-w-sans: "Work Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --radius-20: 20px;
+  --breakpoint-md: 834px;
+}
+
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(162, 89, 255, 0.5);
+} */
+
+@layer base {
+  *:focus {
+    @apply ring-primary-opacity ring-[6px] outline-none;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+  }
+}
