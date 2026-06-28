@@ -61,7 +61,7 @@ Navigate to the project directory:
 you should first clone the project for loading fetches .
 
 ```bash
-its two page , home page and loge in oage when click on sign up
+its two page , home page and loge in page when click on sign up then open second page
  ````
 ```bash
 cd .\NFT-Marketplace-\
