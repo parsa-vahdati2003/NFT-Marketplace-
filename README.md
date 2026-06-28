@@ -57,6 +57,8 @@ This project is for educational and portfolio purposes.
 
 Navigate to the project directory:
 
+
+you should first clone the project for loading fetches 
 its two page , home oage and loge in oage when click on sign up
  
 ```bash
