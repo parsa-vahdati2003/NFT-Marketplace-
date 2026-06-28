@@ -58,9 +58,11 @@ This project is for educational and portfolio purposes.
 Navigate to the project directory:
 
 
-you should first clone the project for loading fetches 
-its two page , home oage and loge in oage when click on sign up
- 
+you should first clone the project for loading fetches .
+
+```bash
+its two page , home page and loge in oage when click on sign up
+ ````
 ```bash
 cd .\NFT-Marketplace-\
 ```
