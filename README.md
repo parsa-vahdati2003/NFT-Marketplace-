@@ -86,8 +86,7 @@ Start the second Tailwind configuration:
 ```bash
 npm run start:tw2
 ```
-
-```start api user.json for second page
+```bash start api user.json for second page
 npm run start:api-user":
 ```
 Run the development server:
