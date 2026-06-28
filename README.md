@@ -1,5 +1,4 @@
 # NFT Marketplace 🎨🚀
-
 A modern and responsive NFT Marketplace frontend project built with Tailwind CSS and JavaScript. The project showcases NFT collections, creators, categories, authentication forms, and interactive UI components.
 
 ## ✨ Features
@@ -58,8 +57,18 @@ This project is for educational and portfolio purposes.
 
 Navigate to the project directory:
 
+its two page , home oage and loge in oage when click on sign up
+ 
 ```bash
 cd .\NFT-Marketplace-\
+```
+
+```bash: install npm packages
+npm i
+```
+
+```install json server for loge in page
+npm install -g json-server
 ```
 
 Start Tailwind CSS build process:
@@ -74,6 +83,9 @@ Start the second Tailwind configuration:
 npm run start:tw2
 ```
 
+```start api user.json for second page
+npm run start:api-user":
+```
 Run the development server:
 
 ```bash
